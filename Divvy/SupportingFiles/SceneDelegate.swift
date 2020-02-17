@@ -20,24 +20,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
 //        guard let _ = (scene as? UIWindowScene) else { return }
 //===========================================================================================
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = LoginViewController()
-        window?.rootViewController = viewController
-        window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
-//============================================================================================
-        //When you don't use storyboard
 //        guard let windowScene = (scene as? UIWindowScene) else { return }
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        let viewController = LoginViewController()
 //
-//        //Nav controller
-//        let navigationController = UINavigationController(rootViewController: viewController) //
-//
-//        window?.rootViewController = navigationController
+//        window?.rootViewController = viewController
 //        window?.makeKeyAndVisible()
 //        window?.windowScene = windowScene
+//============================================================================================
+        //When you don't use storyboard
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = LoginViewController()
+
+        //Nav controller
+        let navigationController = UINavigationController(rootViewController: viewController) //
+
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
 //========================================================================
 //        let viewController = DummyViewController(nibName: nil, bundle: nil)
 //        let navigationController = UINavigationController(rootViewController: viewController)

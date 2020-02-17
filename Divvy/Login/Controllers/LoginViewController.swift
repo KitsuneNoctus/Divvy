@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 //        self.navigationController?.initRootViewController(vc: self)
-        self.view.window!.rootViewController = self
+//        self.view.window!.rootViewController = self
     }
     
     func loadingView(){
