@@ -17,7 +17,58 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+//        guard let _ = (scene as? UIWindowScene) else { return }
+//===========================================================================================
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = LoginViewController()
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
+//============================================================================================
+        //When you don't use storyboard
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let viewController = LoginViewController()
+//
+//        //Nav controller
+//        let navigationController = UINavigationController(rootViewController: viewController) //
+//
+//        window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
+//        window?.windowScene = windowScene
+//========================================================================
+//        let viewController = DummyViewController(nibName: nil, bundle: nil)
+//        let navigationController = UINavigationController(rootViewController: viewController)
+//
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window?.rootViewController = navigationController
+//        self.window?.makeKeyAndVisible()
+//
+//        let tabBarController = UITabBarController()
+//        let tabViewController1 = DummyViewController(
+//            nibName: "DummyViewController",
+//            bundle: nil)
+//        let tabViewController2 = SearchViewController(
+//            nibName:"SearchViewController",
+//            bundle: nil)
+//
+//        tabViewController1.tabBarItem = UITabBarItem(
+//            title: "Location",
+//            image: UIImage(named: "ic_location_blue"),
+//            tag: 1)
+//        tabViewController2.tabBarItem = UITabBarItem(
+//            title: "Search",
+//            image:UIImage(named: "ic_search_blue") ,
+//            tag:2)
+//
+//
+//        let controllers = [tabViewController1,tabViewController2]
+//        tabBarController.viewControllers = controllers
+//        window?.rootViewController = tabBarController
+//
+//        return true
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
