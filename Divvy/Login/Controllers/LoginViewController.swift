@@ -18,9 +18,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
     //Test 1
-
+//    let loginViewDisplay = LoginView()
+    @IBOutlet var loginViewDisplay: LoginView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .purple
+        
+        self.view.addSubview(loginViewDisplay)
+        NSLayoutConstraint.activate([
+            loginViewDisplay.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            loginViewDisplay.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            loginViewDisplay.topAnchor.constraint(equalTo: self.view.topAnchor),
+            loginViewDisplay.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
 
         // Do any additional setup after loading the view.
     }
