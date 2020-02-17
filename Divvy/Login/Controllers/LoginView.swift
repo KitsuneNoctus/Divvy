@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginView: UIView {
+    @IBOutlet var LoginView: LoginView!
+    @IBOutlet weak var DivvyLogo: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,6 +23,10 @@ class LoginView: UIView {
     }
     
     private func commonInit(){
+        Bundle.main.loadNibNamed("LoginView", owner: self, options: nil)
+        addSubview(LoginView)
+        LoginView.frame = self.bounds
+        LoginView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         
     }
 

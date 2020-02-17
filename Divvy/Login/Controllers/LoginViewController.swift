@@ -18,8 +18,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     //Test 1
-//    let loginViewDisplay = LoginView()
-    @IBOutlet var loginViewDisplay: LoginView!
+    let loginViewDisplay = LoginView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
