@@ -19,21 +19,19 @@ import UIKit
 class LoginViewController: UIViewController {
     //Test 1
     
-//    let loginViewDisplay = LoginView()
-//    @IBOutlet var loginViewDisplay: LoginView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadingView()
+        self.view.backgroundColor = .cyan
+//        loadingView()
 
         // Do any additional setup after loading the view.
 //        self.navigationController?.initRootViewController(vc: self)
 //        self.view.window!.rootViewController = self
     }
     
-    func loadingView(){
-        
-    }
+//    func loadingView(){
+//        print("I've Loaded.")
+//    }
 
 
     /*

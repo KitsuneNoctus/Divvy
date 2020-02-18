@@ -19,7 +19,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
 //        guard let _ = (scene as? UIWindowScene) else { return }
+        //Version 4
+//        let rootVC = self.window?.rootViewController
+        
+        //Version 5
+        if let windowScene = scene as? UIWindowScene {
+
+//            let window = UIWindow(windowScene: windowScene)
+            let login = LoginViewController()
+
+            let window = UIWindow(windowScene: windowScene)
+
+            let navigation = UINavigationController(rootViewController: login)
+            window.rootViewController = navigation
+
+            self.window = window
+            window.makeKeyAndVisible()
+        }
 //===========================================================================================
+        //VERSION 1
 //        guard let windowScene = (scene as? UIWindowScene) else { return }
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        let viewController = LoginViewController()
@@ -28,18 +46,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.makeKeyAndVisible()
 //        window?.windowScene = windowScene
 //============================================================================================
+        //Version 2
         //When you don't use storyboard
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = LoginViewController()
-
-        //Nav controller
-        let navigationController = UINavigationController(rootViewController: viewController) //
-
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let viewController = LoginViewController()
+//
+//        //Nav controller
+//        let navigationController = UINavigationController(rootViewController: viewController) //
+//
+//        window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
+//        window?.windowScene = windowScene
 //========================================================================
+        //Alternate Version
 //        let viewController = DummyViewController(nibName: nil, bundle: nil)
 //        let navigationController = UINavigationController(rootViewController: viewController)
 //
