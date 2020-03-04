@@ -22,6 +22,7 @@
 		3F818857240F8EFB0023E4BF /* ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818856240F8EFB0023E4BF /* ProfileContentView.swift */; };
 		3F818859240F8F0F0023E4BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F818858240F8F0F0023E4BF /* MapView.swift */; };
 		3F81885C240F9F460023E4BF /* JSONgathering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81885B240F9F460023E4BF /* JSONgathering.swift */; };
+		3F81885E240FA2640023E4BF /* testoldOutput.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F81885D240FA2640023E4BF /* testoldOutput.json */; };
 		84F3452447B090C4A68A9D11 /* Pods_DivvyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */; };
 		9229CB72344F15480392CC93 /* Pods_Divvy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E54F0068012A230BA7C9D /* Pods_Divvy.framework */; };
 		C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C027676124032458000F41F8 /* GoogleService-Info.plist */; };
@@ -87,6 +88,7 @@
 		3F818856240F8EFB0023E4BF /* ProfileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentView.swift; sourceTree = "<group>"; };
 		3F818858240F8F0F0023E4BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3F81885B240F9F460023E4BF /* JSONgathering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONgathering.swift; sourceTree = "<group>"; };
+		3F81885D240FA2640023E4BF /* testoldOutput.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testoldOutput.json; sourceTree = "<group>"; };
 		9602DAA8C4B345C79FC3EED5 /* Pods-Divvy-DivvyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADCB678D8EE13F0B583E8271 /* Pods-Divvy-DivvyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Divvy-DivvyUITests.release.xcconfig"; path = "Target Support Files/Pods-Divvy-DivvyUITests/Pods-Divvy-DivvyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DBBB46B7ECF60DD454D258 /* Pods_DivvyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DivvyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3F81885B240F9F460023E4BF /* JSONgathering.swift */,
+				3F81885D240FA2640023E4BF /* testoldOutput.json */,
 			);
 			path = JSONTest;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				C070981123F3AE0000CEC9E4 /* MarketplaceView.xib in Resources */,
 				C092E30F23F0CA8300B79FF8 /* Main.storyboard in Resources */,
 				C027676224032458000F41F8 /* GoogleService-Info.plist in Resources */,
+				3F81885E240FA2640023E4BF /* testoldOutput.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
